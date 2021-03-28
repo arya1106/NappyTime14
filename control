@@ -1,0 +1,13 @@
+Package: com.arya06.nappytime14
+Name: NappyTime14
+Version: 1.1.2
+Architecture: iphoneos-arm
+Description: Countdowns for your alarms!
+Maintainer: arya06
+Author: arya06
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), ws.hbang.common (>= 1.11), preferenceloader
+Conflicts: com.arya06.sleepytime14
+Depiction: https://arya1106.github.io/repo/depictions/web/?p=com.arya06.nappytime14
+SileoDepiction: https://arya1106.github.io/repo/depictions/native/com.arya06.nappytime14/depiction.json
+Icon: https://user-images.githubusercontent.com/62923164/106336362-b8b03100-625c-11eb-88e0-d6896fed6ab8.png
