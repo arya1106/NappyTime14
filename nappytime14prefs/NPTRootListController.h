@@ -22,6 +22,7 @@
 @property (nonatomic, retain) UILabel *titleLabel;
 @property (nonatomic, retain) UIImageView *iconView;
 @property (nonatomic, retain) NSMutableDictionary *savedSpecifiers;
+-(void)resetPrompt;
 -(void)setupWelcomeController;
 -(void)dismissWelcomeController;
 @end

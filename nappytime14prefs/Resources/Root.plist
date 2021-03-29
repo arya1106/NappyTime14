@@ -25,6 +25,8 @@
 		<dict>
 			<key>cell</key>
 			<string>PSLinkCell</string>
+			<key>cellClass</key>
+			<string>HBTintedTableCell</string>
 			<key>label</key>
 			<string>Contributors</string>
 			<key>detail</key>

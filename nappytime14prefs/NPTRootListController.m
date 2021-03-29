@@ -233,10 +233,29 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 
+-(void)resetPrompt {
+
+    UIAlertController* resetAlert = [UIAlertController alertControllerWithTitle:@"NappyTime14"
+	message:@"Do you wish to start fresh?"
+	preferredStyle:UIAlertControllerStyleAlert];
+	
+    UIAlertAction* confirmAction = [UIAlertAction actionWithTitle:@"Shoot" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {
+        [self respring];
+	}];
+
+	UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"Maybe not" style:UIAlertActionStyleCancel handler:nil];
+
+	[resetAlert addAction:confirmAction];
+	[resetAlert addAction:cancelAction];
+
+	[self presentViewController:resetAlert animated:YES completion:nil];
+ 
+}
+
 -(void)resetPreferences{
     preferences = [[HBPreferences alloc] initWithIdentifier:@"com.arya06.nappytime14prefs"];
     [preferences removeAllObjects];
-    [self respring];
+    [self resetPrompt];
 }
 
 -(void)setupWelcomeController { //This is an example method.
